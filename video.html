@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-video</title>
+    <style>
+      #video {
+        padding: 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+      #video h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .video-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .video-item {
+        width: 320px;
+      }
+      .video-item video {
+        width: 100%;
+        border: 2px solid #333;
+        border-radius: 8px;
+      }
+
+      .back-button {
+        margin-top: 20px;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .back-button:hover {
+        background-color: #575757;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section id="video">
+      <h3>video jj</h3>
+      <div class="video-container">
+        <div class="video-item">
+          <video controls>
+            <source src="husna11.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="husna12.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="husna13.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+    <button class="back-button" onclick="goBack()">Kembali</button>
+</section>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+  </body>
+</html>

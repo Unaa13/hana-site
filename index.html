@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Husna</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      /* Style untuk Sidebar Hamburger Menu */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(51, 51, 51, 0.8); /* Background transparan */
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidebar a:hover {
+        background-color: #575757;
+      }
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
+      }
+      #menuBtn {
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      #menuBtn:hover {
+        background-color: #575757;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- About Section with Sidebar -->
+    <header id="about">
+      <button id="menuBtn" onclick="openNav()">&#9776;</button>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">About</a>
+        <a href="video.html">Video</a>
+        <a href="picture.html">Picture</a>
+      </div>
+      <h1>about me</h1>
+    </header>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+      }
+    </script>
+
+    <section class="hero">
+      <div class="hero-content"></div>
+      <img src="husna 8.jpeg" alt="Foto Profil" class="profile-image" />
+    </section>
+
+    <h2>Rima Husna</h2>
+    <h4>
+      <p>
+        Swafoto jarak dekat menunjukkan seorang perempuan mengenakan jilbab,
+        dengan lembut meletakkan tangannya di pipinya, dengan hati biru tua
+        ditumpangkan di dekat wajahnya, menyampaikan suasana kontemplasi yang
+        tenang atau kemanisan yang termenung
+      </p>
+    </h4>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <h3>Hal yang saya lakukan di rumah</h3>
+      <div class="project-grid">
+        <div class="project-item">
+          <h4>Mandi</h4>
+          <p>Mandi untuk bersih-bersih</p>
+        </div>
+        <div class="project-item">
+          <h4>Makan</h4>
+          <p>Makan kalau lapar</p>
+        </div>
+        <div class="project-item">
+          <h4>Minum</h4>
+          <p>Minum kalau haus</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h3>Contact me</h3>
+      <p>
+        TikTok:
+        <a
+          href="https://www.tiktok.com/@rimaaa130?is_from_webapp=1&sender_device=pc"
+          >rimaaa130</a
+        >
+      </p>
+      <p>
+        Instagram:
+        <a href="https://www.instagram.com/husnaa_2112/">husna_2112</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Husna</p>
+    </footer>
+  </body>
+</html>
